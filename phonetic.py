@@ -1,4 +1,4 @@
-# phonetic alphabet encoder
+# phonetic alphabet encoder (python)
 from time import sleep
 print('PHONETIC ALPHABET ENCODER!')
 sleep(2)
@@ -9,7 +9,34 @@ while True:
     print('wait a minute...')
     sleep(3)
     chars = list(text.lower())
-    phonetic = {'a': 'alpha', 'b': 'bravo', 'c': 'charlie', 'd': 'delta', 'e': 'echo', 'f': 'foxtrot', 'g': 'golf', 'h': 'hotel', 'i': 'india', 'j': 'juliet', 'k': 'kilo', 'l': 'lima', 'n': 'november', 'm': 'mike', 'o': 'oscar', 'p': 'papa', 'q': 'quebec', 'r': 'romeo', 's': 'sierra', 't': 'tango', 'u': 'uniform', 'v': 'victor', 'w': 'whiskey', 'x': 'xray', 'y': 'yankee', 'z': 'zulu'}
+    phonetic = {
+    'a': 'alpha', 
+    'b': 'bravo', 
+    'c': 'charlie', 
+    'd': 'delta', 
+    'e': 'echo', 
+    'f': 'foxtrot', 
+    'g': 'golf', 
+    'h': 'hotel', 
+    'i': 'india', 
+    'j': 'juliet', 
+    'k': 'kilo', 
+    'l': 'lima', 
+    'n': 'november', 
+    'm': 'mike', 
+    'o': 'oscar', 
+    'p': 'papa', 
+    'q': 'quebec', 
+    'r': 'romeo', 
+    's': 'sierra', 
+    't': 'tango', 
+    'u': 'uniform', 
+    'v': 'victor', 
+    'w': 'whiskey', 
+    'x': 'xray', 
+    'y': 'yankee',
+    'z': 'zulu'
+    }
     print('your final result is: \n')
     def translate(code, chars):
         for chars in chars:
