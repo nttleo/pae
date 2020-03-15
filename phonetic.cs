@@ -95,7 +95,7 @@ class phonetic
                         Console.Write("zulu ");
                         break;
                     default:
-                        Console.Write(c);
+                        Console.Write(c + " ");
                         break;
                 }
             }
