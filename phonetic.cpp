@@ -62,4 +62,5 @@ int main()
             cout << codes[fin[z]][0];
         }
     }
+    return 11;
 }
