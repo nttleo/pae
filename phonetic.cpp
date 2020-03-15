@@ -1,6 +1,8 @@
 // phonetic alphabet encoder (c++)
 #include <iostream>
 #include <stdio.h>
+#include <algorithm>
+#include <cctype>
 #include <vector>
 #include <map>
 #include <string>
@@ -14,6 +16,11 @@ int main()
     while (true) {
         string txt;
         getline(cin, txt);
+
+        // converting txt to lower case
+        for_each(txt.begin(), txt.end(), [](char& c) {
+            c = ::tolower(c);
+            });
 
         // creating a list with chars of txt
         vector<char> norm;
