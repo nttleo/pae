@@ -1,15 +1,15 @@
-# phonetic alphabet encoder (python)
+# phonetic alphabet encoder (py)
+import os
 from time import sleep
+os.system("color 5")
 print('PHONETIC ALPHABET ENCODER!')
 sleep(2)
-print('what is the text that you want to encode?')
-sleep(1)
+system('cls')
+os.system("color f")
 while True:
-    text = input('\n')
-    print('wait a minute...')
-    sleep(3)
-    chars = list(text.lower())
-    phonetic = {
+    print('insert a text right bellow: ')
+    txt = input('').lower().strip()
+    code = {
     'a': 'alpha', 
     'b': 'bravo', 
     'c': 'charlie', 
@@ -37,15 +37,11 @@ while True:
     'y': 'yankee',
     'z': 'zulu'
     }
-    print('your final result is: \n')
-    def translate(code, chars):
-        for chars in chars:
-            if chars in code:
-                    print(code[chars])
-                    sleep(0.6)
-            else:
-                print(chars)
-                sleep(0.3)
-    translate(phonetic, chars)
-    print('\nshow me another text.')
+    print("\n")
+    for x in txt:
+        if x in code:
+            print(code[x])
+        else:
+            print(x)
+    print("\n\n")
     continue
