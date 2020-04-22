@@ -1,3 +1,4 @@
+// phonetic alphabet encoder (java)
 import java.util.Scanner;
 class phonetic
 {
